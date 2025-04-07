@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Star Haven Registration</title>
+    <link rel="stylesheet" href="star.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<nav class="navbar">
+        <section class="nav-left">
+        </section>
+        <section class="nav-middle">
+            <input type="text" placeholder="Search...">
+            <button class="search-btn">🔍</button>
+        </section>
+        <section class="nav-right">
+			<a href="index.html">HOME</a>
+			<a href="inv.html">INVENTORY</a>
+			<a href="contact.html">CONTACT</a>
+			<a href="aboutpage.html">ABOUT US</a>
+		</section>
+    </nav>
+
+    <header>
+        <h1 align="center">CONTACT US</h1>
+    </header>
+<form name="myform" method="post" onsubmit="return validateform()">
+    <section class="form-container">
+        <section class="form-item">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" placeholder="Enter your first name">
+        </section>
+
+        <section class="form-item">
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Enter your last name">
+        </section>
+
+        <section class="form-item">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+        </section>
+
+        <section class="form-item">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+        </section>
+
+        <section class="form-item">
+            <label for="car-interest">Car Interest:</label>
+            <select id="car-interest" name="car-interest" required>
+                <option value="used">Used Car</option>
+                <option value="new">New Car</option>
+                <option value="rent">Car Rental</option>
+            </select>
+        </section>
+
+        <section class="form-item">
+            <label for="message">Additional Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Enter any additional details"></textarea>
+        </section>
+
+        <button type="submit" class="submit-btn" formaction="main.html">Submit</button>
+    </section>
+</form>
+
+<script>
+	function validateform(){
+	var fname = document.getElementById("first-name").value;
+	var lname = document.getElementById("last-name").value;
+	var phone = document.getElementById("phone").value;
+	var email = document.getElementById("email").value;
+
+	if(fname===""){
+	alert("First Name Must be entered");
+	return false;}
+	
+	if(lname===""){
+	alert("Last Name Must be entered");
+	return false;}
+
+	if(email===""){
+	alert("Email Must be entered");
+	return false;}
+
+	if(phone===""){
+	alert("Phone Number Must be entered");
+	return false;}
+
+	}
+</script>
+
+    <footer class = "footer-container">
+        <section class = "footer-content">
+            <section class = "footer-column">
+                <h3>INVENTORY</h3>
+                <p>Used Cars</p>
+                <p>New Cars</p>
+                <p>For Rent</p>
+            </section>
+            <section class = "footer-column">
+                <h3>CONTACT US</h3>
+                <p>Address 1</p>
+                <p>Address 2</p>
+                <p>1-876-234-9708</p>
+                <p>starhaven@gmail.com</p>
+            </section>
+            <section class = "footer-column">
+                <h3>INVENTORY</h3>
+                <p>Used Cars</p>
+                <p>New Cars</p>
+                <p>For Rent</p>
+            </section>
+        </section>
+    <section class="footer-h3">
+        <p>COPYRIGHT AND LOGO</p>
+    </section>
+</section>
+<script>
+
+    $(document).ready(function(){
+        $(".nav-right").hide();
+        $(".nav-right").fadeIn(500) ;
+        $(".company-name").hide();
+        $(".company-name").fadeIn(500) ;
+        $("footer").animate({left : '200px'}, ) ;
+        $("main").slideDown(8000);
+
+    } );
+
+</script>
+</footer>

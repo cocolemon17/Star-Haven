@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="images/whitestarhavenlogo.png">
+    <title>THANK YOU</title>
+    <link rel="stylesheet" href="starhavenstyle.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+		<section class="nav-left">
+				
+		</section>
+		<section class="nav-middle">
+			<input type="text" placeholder="Search...">
+			<button class="search-btn">🔍</button>
+		</section>
+		<section class="nav-right">
+			<a href="index.html">HOME</a>
+			<a href="inv.html">INVENTORY</a>
+			<a href="contact.html">CONTACT</a>
+			<a href="aboutpage.html">ABOUT US</a>
+		</section>
+	</nav>
+
+	
+	<section class = "main-content">
+		<section class ="banner-thank">
+		<section class="logo">
+				<a href="index.html" >
+					<img src="images/whitestarhavenlogo.png" height="100px" width="100px">
+				</a>
+		   </section> 
+		   <section class="company-name">
+				<section class="star-text">
+					<h1>Thank you for shopping with us!</h1>
+					<br>
+					<p class="motto">
+						Where Every Car Finds a New Star.
+					</p>
+					<br>
+					<a href="index.html"><p class="shop-now">
+						Back to home
+					</p></a>
+					
+				</section>
+			</section>
+		</section>
+	</section>
+	<br>
+	
+
+	
+
+			<footer class = "footer-container">
+				<section class = "footer-content">
+					<section class = "footer-column">
+						<h3>INVENTORY</h3>
+						<p>
+						<a href="toyotapage.html">Toyota</a>
+						</p>
+						<p>
+							<a href="nissanpage.html">Nissan</a>
+						</p>
+						<p><a href="bmwpage.html">BMW</a></p>
+						
+					
+					</section>
+					<section class = "footer-column">
+						<h3>CONTACT US</h3>
+						<p>26 Halfway Tree</p>
+						<p>Kingston Jamaica</p>
+						<p>1-876-234-9708</p>
+						<p>starhaven@gmail.com</p>
+					</section>
+					<section class = "footer-column">
+						<h3>SEND US A MESSAGE</h3>
+						<p><a href="contact.html">Contact</a></p>
+						<p><a href="form.html">Register</a></p>
+					</section>
+				</section>
+				<section class="footer-h3">
+					<p>STAR HAVEN</p>
+				</section>
+		<script>
+
+			$(document).ready(function(){
+				$(".nav-right").hide();
+				$(".nav-right").fadeIn(500) ;
+				$(".company-name").hide();
+				$(".company-name").fadeIn(500) ;
+				$("footer").animate({left : '200px'}, ) ;
+				$("main").slideDown(8000);
+
+			} );
+
+		</script>
+	</footer>
+
+</body>
+</html>
